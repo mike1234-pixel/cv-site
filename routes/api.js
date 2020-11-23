@@ -21,9 +21,10 @@ app.route('/contact').post((req, res) => {
     async function main(){
 
         let transporter = nodemailer.createTransport({
-            host: "smtp-mail.outlook.com", // hostname
+            host: 'smtp.office365.com', //"smtp-mail.outlook.com", // hostname
             secureConnection: false, // TLS requires secureConnection to be false
             port: 587, // port for secure SMTP
+            requireTLS: true,
             auth: {
                 user: myEmail,
                 pass: myPassword
