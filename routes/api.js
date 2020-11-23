@@ -14,21 +14,30 @@ app.route('/contact').post((req, res) => {
     const message = req.body.message;
     console.log(name, message)
 
+    const myEmail = process.env.EMAIL;
+    const myProtonEmail = process.env.PROTON_EMAIL;
+    const myPassword = process.env.EMAIL_PASSWORD;
+
     async function main(){
+
         let transporter = nodemailer.createTransport({
-            service: "protonmail",
+            host: "smtp-mail.outlook.com", // hostname
+            secureConnection: false, // TLS requires secureConnection to be false
+            port: 587, // port for secure SMTP
             auth: {
-              user: process.env.EMAIL, 
-              pass: process.env.EMAIL_PASSWORD,
-            }, 
+                user: myEmail,
+                pass: myPassword
+            },
+            tls: {
+                ciphers:'SSLv3'
+            } 
           });
     
         let info = await transporter.sendMail({
-          from: '"Me" <miketandy@protonmail.com>',
-          to: "me@miketandy.com",
+          from: `"Me" <${myEmail}>`,
+          to: myProtonEmail,
           subject: "You've Got Mail",
-          text: message,
-          html: `<p>${message}</p>`
+          text: `name ${name}, email ${email}, message ${message}` 
         });
     
         console.log("Email sent");
