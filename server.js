@@ -2,6 +2,7 @@ const express        = require('express');
 const bodyParser  = require('body-parser');
 const dotenv          = require('dotenv').config();
 const helmet          = require('helmet');
+const favicon = require("express-favicon");
 const apiRoutes     = require('./routes/api.js');
 
 const app = express();

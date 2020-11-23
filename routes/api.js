@@ -1,6 +1,5 @@
 const nodemailer   = require('nodemailer');
 const json              = require('../data/projects.json');
-var nodeoutlook = require('nodejs-nodemailer-outlook');
 
 module.exports = function (app) {
 // get project data
@@ -8,56 +7,71 @@ app.route('/data/projects').get((req, res) => {
     res.send(json)
 })
 
+// google-OAuth
+const { google }      = require('googleapis');
+const OAuth2 = google.auth.OAuth2;
+
 // post contact form
 app.route('/contact').post((req, res) => {
-    const name = req.body.name;
-    const email = req.body.email;
-    const message = req.body.message;
-    console.log(name, message)
 
-    const myEmail = process.env.EMAIL;
-    const myProtonEmail = process.env.PROTON_EMAIL;
-    const myPassword = process.env.EMAIL_PASSWORD;
+      // OAUTH
+      const myOAuth2Client = new OAuth2(
+        process.env.GOOGLE_OAUTH_CLIENT_ID,
+        process.env.GOOGLE_OAUTH_CLIENT_SECRET,
+        "https://developers.google.com/oauthplayground"
+      );
 
-    var nodeoutlook = require('nodejs-nodemailer-outlook')
-nodeoutlook.sendEmail({
-    auth: {
-        user: myEmail,
-        pass: myPassword
-    },
-    from: myEmail,
-    to: 'miketandy@protonmail.com',
-    subject: "You've Got Mail",
-    html: `<b>Email: ${email}, Name: ${name}, Message: ${message}</b>`,
-    text: 'This is text version!',})
+      myOAuth2Client.setCredentials({
+        refresh_token: process.env.GOOGLE_OAUTH_REFRESH_TOKEN,
+      });
+      let myAccessToken = myOAuth2Client.getAccessToken();
 
-    // async function main(){
+        // NODEMAILER
+        var transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            type: "OAuth2",
+            user: process.env.EMAIL,
+            clientId: process.env.GOOGLE_OAUTH_CLIENT_ID,
+            clientSecret: process.env.GOOGLE_OAUTH_CLIENT_SECRET,
+            refreshToken: process.env.GOOGLE_OAUTH_REFRESH_TOKEN,
+            accessToken: myAccessToken,
+          },
+        });
 
-    //     let transporter = nodemailer.createTransport({
-    //         host: 'smtp.office365.com', //"smtp-mail.outlook.com", // hostname
-    //         secureConnection: false, // TLS requires secureConnection to be false
-    //         port: 587, // port for secure SMTP
-    //         requireTLS: true,
-    //         auth: {
-    //             user: myEmail,
-    //             pass: myPassword
-    //         },
-    //         tls: {
-    //             ciphers:'SSLv3'
-    //         } 
-    //       });
-    
-    //     let info = await transporter.sendMail({
-    //       from: `"Me" <${myEmail}>`,
-    //       to: myProtonEmail,
-    //       subject: "You've Got Mail",
-    //       text: `name ${name}, email ${email}, message ${message}` 
-    //     });
-    
-    //     console.log("Email sent");
-    //   }
-    // main().catch(console.error);
+        let mailtoMeMailOptions = {
+          from: process.env.EMAIL,
+          to: process.env.PROTON_EMAIL,
+          subject: "You've Got Mail",
+          text: `NAME: ${req.body.name} EMAIL ${req.body.email} MESSAGE ${req.body.message}`,
+        };
 
-  res.redirect('/')
+        let mailtoSenderMailOptions = {
+          from: process.env.EMAIL,
+          to: req.body.email,
+          subject: "Thanks for Getting In Touch",
+          text: "I have received your message and will be in touch with you shortly.",
+        };
+
+        transporter.sendMail(mailtoMeMailOptions, (error, info) => {
+          if (error) {
+            console.log(error);
+          } else {
+            console.log("Email sent: " + info.response);
+          }
+        });
+
+        transporter.sendMail(mailtoSenderMailOptions, (error, info) => {
+          if (error) {
+            console.log(error);
+          } else {
+            console.log("Email sent: " + info.response);
+          }
+        });
+
+        transporter.close();
+
+        res.redirect('/')
 })
+
 }

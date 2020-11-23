@@ -8,7 +8,6 @@ $(() => {
       {
         let projects = [];
         data.projects.forEach((ele, index) => {
-          console.log(ele)
             const project = [
             `<div class="grid-item-${index + 1}">
               <div class="card">
