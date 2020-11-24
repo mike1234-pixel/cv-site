@@ -1,188 +1,47 @@
+body {
+  text-align: center;
+}
+
 /* grid-container */
 #projects {
   display: grid;
-  margin: 40px;
+  width: 100%;
   grid-gap: 20px;
-}
-/* items 1-5 */
-.grid-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  grid-template-columns: repeat(8, 1fr);
 }
 
-.grid-item-2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.grid-item-3 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-}
-
-.grid-item-4 {
-  grid-column: 4 / 5;
-  grid-row: 1 / 2;
-}
-
-.grid-item-5 {
-  grid-column: 5 / 6;
-  grid-row: 1 / 2;
-}
-
-/* items 6-10 */
-.grid-item-6 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.grid-item-7 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.grid-item-8 {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-
-.grid-item-9 {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
-}
-
-.grid-item-10 {
-  grid-column: 5 / 6;
-  grid-row: 2 / 3;
-}
-
-/* tablet: 3 column grid (ipad pro = 1024px width) */
-
-@media (max-width: 1025px) {
-  /* items 1-3 */
-  .grid-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .grid-item-2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-
-  .grid-item-3 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-  }
-  /* items 4-6 */
-  .grid-item-4 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-
-  .grid-item-5 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-
-  .grid-item-6 {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-  }
-  /* items 7-9 */
-  .grid-item-7 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-  }
-
-  .grid-item-8 {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-  }
-
-  .grid-item-9 {
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-  }
-  /* item 10-12 */
-  .grid-item-10 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-  }
-
-  .grid-item-11 {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-  }
-
-  .grid-item-12 {
-    grid-column: 3 / 4;
-    grid-row: 4 / 5;
+@media (max-width: 4000px) {
+  #projects {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
-/* phone: 1 column grid (iphone 8 = 414px width) */
-
-@media (max-width: 415px) {
-  .grid-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+@media (max-width: 2500px) {
+  #projects {
+    grid-template-columns: repeat(5, 1fr);
   }
+}
 
-  .grid-item-2 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+@media (max-width: 1350px) {
+  #projects {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .grid-item-3 {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+@media (max-width: 830px) {
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .grid-item-4 {
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
+@media (max-width: 525px) {
+  #projects {
+    grid-template-columns: repeat(1, 1fr);
   }
+}
 
-  .grid-item-5 {
-    grid-column: 1 / 2;
-    grid-row: 5 / 6;
-  }
-
-  .grid-item-6 {
-    grid-column: 1 / 2;
-    grid-row: 6 / 7;
-  }
-
-  .grid-item-7 {
-    grid-column: 1 / 2;
-    grid-row: 7 / 8;
-  }
-
-  .grid-item-8 {
-    grid-column: 1 / 2;
-    grid-row: 8 / 9;
-  }
-
-  .grid-item-9 {
-    grid-column: 1 / 2;
-    grid-row: 9 / 10;
-  }
-
-  .grid-item-10 {
-    grid-column: 1 / 2;
-    grid-row: 10 / 11;
-  }
-
-  .grid-item-11 {
-    grid-column: 1 / 2;
-    grid-row: 11 / 12;
-  }
-
-  .grid-item-12 {
-    grid-column: 1 / 2;
-    grid-row: 12 / 13;
-  }
+.grid-item {
+  align-self: center;
 }
 
 /* CARDS */
@@ -190,15 +49,51 @@
 .card {
   text-align: center;
   width: 250px;
-  height: 400px;
+  height: 450px;
+  margin: auto; /* center card within grid item */
+  border-radius: 0;
 }
 
-.card-btn-1 {
-  float: left;
-  padding: 10px;
+.card-img-top {
+  border-radius: 0;
 }
 
-.card-btn-2 {
-  float: right;
+.card:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s ease-in 0.2s;
+}
+.card-text {
+  height: 80px;
+}
+
+/* pseudo elements are the glassy overlay on hover */
+.card::before,
+.card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform 0.3s ease-out 0s;
+  background: rgba(141, 152, 172, 0.192);
+  content: "";
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.card-btn {
   padding: 10px;
+  width: 80px;
 }

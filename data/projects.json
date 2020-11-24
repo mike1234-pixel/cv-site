@@ -1,9 +1,17 @@
 {
     "projects": [
         {
-            "name": "Anonymous Message Board",
+            "name": "Stock Checker",
             "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
+            "description": "Node.js, Express, jQuery",
+            "project_link": "https://stock-checker-11.herokuapp.com",
+            "code_link": "https://github.com/mike1234-pixel/ffc-quality-assurance-project-two",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/stock-checker-screenshot.jpg"
+        },
+        {
+            "name": "Message Board",
+            "category": "Information Security and Quality Assurance",
+            "description": "Node.js, Express, Mongoose, MongoDB, jQuery, MDBootstrap",
             "project_link": "https://anonymous-message-board-app.herokuapp.com/",
             "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
             "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
@@ -11,82 +19,146 @@
         {
             "name": "Live Chat",
             "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Socket.io, Passport.js, Pug, MDBootstrap",
+            "description": "Node.js, Express, Socket.io, Passport.js,  OAuth 2.0 Pug, MDBootstrap",
             "project_link": "https://live-chat-application-1.herokuapp.com/",
             "code_link": "https://github.com/mike1234-pixel/fcc-advanced-node-and-express-project",
             "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/live-chat.jpg"
         },        
         {
-            "name": "Anonymous Message Board",
+            "name": "Personal Library",
             "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "description": "Node.js, Express, Mongoose, MongoDB, jQuery, MDBootstrap, Mocha, Chai",
+            "project_link": "https://personal-library-1.herokuapp.com",
+            "code_link": "https://github.com/mike1234-pixel/ffc-quality-assurance-project-three",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/personal-library-screenshot.JPG"
         },        
         {
-            "name": "Anonymous Message Board",
+            "name": "Issue Tracker",
             "category": "Information Security and Quality Assurance",
             "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "project_link": "https://issue-tracker-11.herokuapp.com",
+            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-one",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/issue-tracker-screenshot.JPG"
         },        
         {
-            "name": "Anonymous Message Board",
-            "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "name": "Bar Chart",
+            "category": "Data Visualisation",
+            "description": "d3.js",
+            "project_link": "https://mike1234-pixel.github.io/fcc-d3-project-one/",
+            "code_link": "https://github.com/mike1234-pixel/fcc-d3-project-one",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/bar-screenshot.JPG"
         },        
         {
-            "name": "Anonymous Message Board",
-            "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "name": "Scatter Plot",
+            "category": "Data Visualisation",
+            "description": "d3.js",
+            "project_link": "https://mike1234-pixel.github.io/fcc-d3-project-two/",
+            "code_link": "https://github.com/mike1234-pixel/fcc-d3-project-two",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/scatterplot-graph-screenshot.JPG"
         },        
         {
-            "name": "Anonymous Message Board",
-            "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "name": "Heat Map",
+            "category": "Data Visualisation",
+            "description": "d3.js",
+            "project_link": "https://mike1234-pixel.github.io/fcc-d3-project-three/",
+            "code_link": "https://github.com/mike1234-pixel/fcc-d3-project-three",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/heatmap-screenshot.JPG"
         },        
         {
-            "name": "Anonymous Message Board",
-            "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "name": "Choropleth Map",
+            "category": "Data Visualisation",
+            "description": "d3.js",
+            "project_link": "https://mike1234-pixel.github.io/fcc-d3-project-four/",
+            "code_link": "https://github.com/mike1234-pixel/fcc-d3-project-four",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/choropleth-screenshot.JPG"
         },        
         {
-            "name": "Anonymous Message Board",
-            "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "name": "Tree Map",
+            "category": "Data Visualisation",
+            "description": "d3.js",
+            "project_link": "https://mike1234-pixel.github.io/fcc-d3-project-five/",
+            "code_link": "https://github.com/mike1234-pixel/fcc-d3-project-five",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/treemap-screenshot.jpg"
         },        
         {
-            "name": "Anonymous Message Board",
-            "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "name": "Exercise Tracker",
+            "category": "Microservices and APIs",
+            "description": "Node.js, Express, Mongoose, MongoDB, MDBootstrap",
+            "project_link": "https://exercise-tracker-1.herokuapp.com/",
+            "code_link": "https://github.com/mike1234-pixel/ffc-apis-and-microservices-project-four",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/exercise-tracker-screenshot.JPG"
         },        
         {
-            "name": "Anonymous Message Board",
-            "category": "Information Security and Quality Assurance",
-            "description": "Node.js, Mongoose, MongoDB, jQuery, MDBootstrap",
-            "project_link": "https://anonymous-message-board-app.herokuapp.com/",
-            "code_link": "https://github.com/mike1234-pixel/fcc-information-security-project-two",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/anonymous-message-board.jpg"
+            "name": "File Metadata",
+            "category": "Microservices and APIs",
+            "description": "Node.js, Express, Multer",
+            "project_link": "https://file-metadata-microservice-1.herokuapp.com",
+            "code_link": "https://github.com/mike1234-pixel/ffc-apis-and-microservices-project-five",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/file-metadata-microservice-screenshot.JPG"
+        },
+        {
+            "name": "Weather Check",
+            "category": "Microservices and APIs",
+            "description": "Node.js, Express, OpenWeather API",
+            "project_link": "https://whatstheweathertodaymyfriend.herokuapp.com",
+            "code_link": "https://github.com/mike1234-pixel/weather-app",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/weather-app-screenshot.JPG"
+        },
+        {
+            "name": "Timestamp",
+            "category": "Microservices and APIs",
+            "description": "Node.js, Express, Moment.js",
+            "project_link": "https://timestamp-microservice-11.herokuapp.com/",
+            "code_link": "https://github.com/mike1234-pixel/ffc-apis-and-microservices-project-one",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/timestamp-microservice-screenshot.jpg"
+        },
+        {
+            "name": "Metric-Imperial Converter",
+            "category": "Microservices and APIs",
+            "description": "Node.js, Express, jQuery, MDBootstrap, Mocha, Chai",
+            "project_link": "https://metric-imperial-converter-1.herokuapp.com/",
+            "code_link": "https://github.com/mike1234-pixel/ffc-quality-assurance-project-one",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/metric-imperial-converter-screenshot.JPG"
+        },
+        {
+            "name": "Portfolio",
+            "category": "Frontend Libraries",
+            "description": "React",
+            "project_link": "https://master.d11sobnc278z7p.amplifyapp.com/",
+            "code_link": "https://github.com/mike1234-pixel/personal-portfolio",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/personal-site-screenshot.jpg"
+        },
+        {
+            "name": "Random Quotes",
+            "category": "Frontend Libraries",
+            "description": "React",
+            "project_link": "https://master.d3fb1rattu62ed.amplifyapp.com",
+            "code_link": "https://github.com/mike1234-pixel/fcc-frontend-libraries-project-one",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/lotr-screenshot.JPG"
+        },
+        {
+            "name": "Markdown Preview",
+            "category": "Frontend Libraries",
+            "description": "React, Marked.js",
+            "project_link": "https://mike1234-pixel.github.io/fcc-frontend-libraries-project-two/",
+            "code_link": "https://github.com/mike1234-pixel/fcc-frontend-libraries-project-two",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/markdown-preview-screenshot.JPG"
+        },
+        {
+            "name": "Simon Game",
+            "category": "Frontend Libraries",
+            "description": "jQuery",
+            "project_link": "https://mike1234-pixel.github.io/simon-game/",
+            "code_link": "https://github.com/mike1234-pixel/simon-game",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/simon-screenshot.jpg"
+        },
+        {
+            "name": "See London",
+            "category": "Frontend Libraries",
+            "description": "Sass",
+            "project_link": "https://mike1234-pixel.github.io/see-london/",
+            "code_link": "https://github.com/mike1234-pixel/see-london",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/seelondon-screenshot.jpg"
         }
     ]
 }
