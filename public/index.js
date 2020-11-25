@@ -31,10 +31,12 @@ $(() => {
                   <!-- Buttons -->
                   <a href=${ele.project_link} target="_blank" class="btn btn-light card-btn card-btn-1">Project</a>
                   <a href=${ele.code_link} target="_blank" class="btn btn-light card-btn card-btn-2">Code</a>
-              
+                  
+                  
                 </div>
               
               </div>
+
             </div>`
               ];
               projects.push(project.join(''));

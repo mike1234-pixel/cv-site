@@ -1,3 +1,9 @@
+/* complementary color to boostrap primary (blue) = rgba(229, 99, 51, 0.705) */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
 }
@@ -97,3 +103,65 @@ body {
   padding: 10px;
   width: 80px;
 }
+
+#video-container {
+  height: 35vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  /* border: 1px solid #33b5e5; */
+  /* background: rgba(229, 99, 51, 0.705); */
+}
+
+@media (min-width: 575px) {
+  #home-title-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 375px) {
+  #video-container {
+    height: 45vh;
+  }
+}
+
+.fg-video-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: -2;
+  opacity: 0.15;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* https://coding-video.s3.eu-west-2.amazonaws.com/codevideo.mov */
+
+/* 
+ns-1247.awsdns-27.org. 
+ns-2042.awsdns-63.co.uk. 
+ns-663.awsdns-18.net. 
+ns-177.awsdns-22.com.
+NS
+TTL: 172800
+ */
+
+/* 
+ A IPV4
+ dkvbquwifb055.cloudfront.net.
+  */
+
+/* 
+  SOA
+  
+  ns-1247.awsdns-27.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400
+  */
