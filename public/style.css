@@ -8,12 +8,71 @@ body {
   text-align: center;
 }
 
-/* grid-container */
+.navbar {
+  text-align: left;
+}
+
+/* INDEX.HTML BANNER */
+
+#video-container {
+  height: 35vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  /* border: 1px solid #33b5e5; */
+  /* background: rgba(229, 99, 51, 0.705); */
+}
+
+@media (min-width: 575px) {
+  #home-title-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 575px) {
+  #home-title-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  #video-container {
+    height: 45vh;
+  }
+}
+
+.fg-video-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  z-index: -2;
+  opacity: 0.15;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #33b5e5;
+}
+
+/* CARDS: GRID-CONTAINER */
 #projects {
   display: grid;
   width: 100%;
   grid-gap: 20px;
   grid-template-columns: repeat(8, 1fr);
+  margin-bottom: 20px;
 }
 
 @media (max-width: 4000px) {
@@ -82,7 +141,7 @@ body {
   left: 0;
   transform: scale3d(0, 0, 1);
   transition: transform 0.3s ease-out 0s;
-  background: rgba(141, 152, 172, 0.192);
+  background: rgba(51, 182, 229, 0.096);
   content: "";
   pointer-events: none;
 }
@@ -104,64 +163,32 @@ body {
   width: 80px;
 }
 
-#video-container {
-  height: 35vh;
-  width: 100%;
-  position: relative;
-  margin-bottom: 20px;
-  /* border: 1px solid #33b5e5; */
-  /* background: rgba(229, 99, 51, 0.705); */
+/* CV PAGE */
+
+#cv-page-body,
+#contact-page-body {
+  min-height: 80vh;
 }
 
-@media (min-width: 575px) {
-  #home-title-container {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+#cv-page-body {
+  padding-bottom: 20px;
 }
 
-@media (max-width: 375px) {
-  #video-container {
-    height: 45vh;
-  }
+#cv-title,
+#contact-title {
+  margin-top: 20px;
 }
 
-.fg-video-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-width: 100%;
-  z-index: -2;
-  opacity: 0.15;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+.certificate-btn {
+  width: 300px;
 }
 
-/* https://coding-video.s3.eu-west-2.amazonaws.com/codevideo.mov */
+#skills-list li {
+  list-style-type: none;
+}
 
-/* 
-ns-1247.awsdns-27.org. 
-ns-2042.awsdns-63.co.uk. 
-ns-663.awsdns-18.net. 
-ns-177.awsdns-22.com.
-NS
-TTL: 172800
- */
+/*  CONTACT PAGE */
 
-/* 
- A IPV4
- dkvbquwifb055.cloudfront.net.
-  */
-
-/* 
-  SOA
-  
-  ns-1247.awsdns-27.org. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400
-  */
+#contact-form {
+  margin: 0 10vw 0;
+}
