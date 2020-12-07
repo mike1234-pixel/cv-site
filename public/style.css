@@ -8,6 +8,11 @@ body {
   text-align: center;
 }
 
+.center {
+  width: 100vw;
+  text-align: center;
+}
+
 .navbar {
   text-align: left;
 }
