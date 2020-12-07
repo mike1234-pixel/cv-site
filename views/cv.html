@@ -15,6 +15,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <!-- Local CSS -->
     <link rel="stylesheet" href="/public/style.css">
+    <!--iconify-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>
     <body>
     <!--Navbar -->
@@ -44,6 +46,7 @@
           <h2>Code Skills</h2>
           <h3>Data Analysis</h3>
             <i class="fab fa-python"></i>
+            <span class="iconify iconify-icon" data-icon="file-icons:numpy" data-inline="false"></span>
             <i class="fas fa-chart-pie"></i>
             <i class="fas fa-database"></i>
             <i class="fas fa-file-excel"></i>
@@ -52,8 +55,12 @@
           <h3>Web Development</h3>
             <i class="fab fa-js-square"></i>
             <i class="fab fa-node-js"></i>
+            <span class="iconify iconify-icon" data-icon="cib:d3-js" data-inline="false"></span>
+            <span class="iconify iconify-icon" data-icon="bx:bxl-jquery" data-inline="false"></span>
             <i class="fab fa-react"></i>
+            <span class="iconify iconify-icon" data-icon="bx:bxl-redux" data-inline="false"></span>
             <i class="fab fa-sass"></i>
+            <span class="iconify iconify-icon" data-icon="cib:mongodb" data-inline="false"></span>
             <i class="fab fa-bootstrap"></i>
             <i class="fab fa-css3-alt"></i>
             <i class="fab fa-html5"></i>
@@ -61,8 +68,11 @@
         </div>
         <div id="qualifications">
           <h2>Degree</h2>
-            <p>BSc Sociology and Psychology - City, University of London [First Class Hons]</p>
+          <i class="fas fa-university" id="uni-icon"></i><br>
+            <p>BSc Sociology and Psychology, First Class Hons - City, University of London</p>
             <h2>freeCodeCamp Certificates</h2>
+            <i class="fab fa-free-code-camp" id="fcc-icon"></i><br>
+            <a type="button" class="btn btn-success certificate-btn" href="#" target="_blank">Data Analysis with Python</a><br>
             <a type="button" class="btn btn-success certificate-btn" href="https://www.freecodecamp.org/certification/fcc64cf2f0b-2faa-4dac-bbae-48a1bc7f9538/responsive-web-design" target="_blank">Responsive Web Design</a><br>
             <a type="button" class="btn btn-success certificate-btn" href="https://www.freecodecamp.org/certification/fcc64cf2f0b-2faa-4dac-bbae-48a1bc7f9538/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures</a><br>
             <a type="button" class="btn btn-success certificate-btn" href="https://www.freecodecamp.org/certification/fcc64cf2f0b-2faa-4dac-bbae-48a1bc7f9538/front-end-libraries" target="_blank">Front End Libraries</a><br>
@@ -74,51 +84,51 @@
       </div>
      <!-- Footer -->
      <footer class="page-footer font-small blue pt-4">
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-        <!-- Grid row -->
-        <div class="row">
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-          <!-- Content -->
-          <h5 class="text-uppercase">Footer Content</h5>
-          <p>Here you can use rows and columns to organize your footer content.</p>
-        </div>
-        <!-- Grid column -->
-        <hr class="clearfix w-100 d-md-none pb-3">
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3">
-          <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#!">Link 1</a></li>
-            <li><a href="#!">Link 2</a></li>
-            <li><a href="#!">Link 3</a></li>
-            <li><a href="#!">Link 4</a></li>
-          </ul>
-        </div>
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+        <!-- Content -->
+        <h5 class="text-uppercase">Website</h5>
+        <p>This website was written in Node.js by Michael Tandy 2020. </p>
+        <p><a href="https://github.com/mike1234-pixel/cv-site" target="_blank" class="social-link">View the source code.<i class="fas fa-file-code"></i></a></p>
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
       <!-- Grid column -->
       <div class="col-md-3 mb-md-0 mb-3">
         <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#!">Link 1</a></li>
-            <li><a href="#!">Link 2</a></li>
-            <li><a href="#!">Link 3</a></li>
-            <li><a href="#!">Link 4</a></li>
-          </ul>
+        <!-- <h5 class="text-uppercase">Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#!">Link 1</a></li>
+          <li><a href="#!">Link 2</a></li>
+          <li><a href="#!">Link 3</a></li>
+          <li><a href="#!">Link 4</a></li>
+        </ul> -->
       </div>
-      <!-- Grid column -->
-      </div>
-    <!-- Grid row -->
-      </div>
-      <!-- Footer Links -->
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© <script type="text/javascript">document.write(new Date().getFullYear());</script> Copyright:
-        <a href="mailto:me@miketandy.com"> me@miketandy.com</a>
-      </div>
-     <!-- Copyright -->  
-      </footer>
+    <!-- Grid column -->
+    <div class="col-md-3 mb-md-0 mb-3">
+      <!-- Links -->
+        <h5 class="text-uppercase">Social</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://github.com/mike1234-pixel" target="_blank" class="social-link">Github <i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.freecodecamp.org/fcc64cf2f0b-2faa-4dac-bbae-48a1bc7f9538" target="_blank" class="social-link">freeCodeCamp <i class="fab fa-free-code-camp"></i></a></li>
+          <li><a href="https://www.codewars.com/users/Michael-tandy" target="_blank" class="social-link">CodeWars <span class="iconify" data-icon="simple-icons:codewars" data-inline="false"></span></a></li>
+        </ul>
+    </div>
+    <!-- Grid column -->
+    </div>
+  <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© <script type="text/javascript">document.write(new Date().getFullYear());</script> Copyright:
+      <a href="mailto:me@miketandy.com"> me@miketandy.com</a>
+    </div>
+   <!-- Copyright -->  
+    </footer>
 <!-- Footer -->
     </script>
     <!-- JQuery -->

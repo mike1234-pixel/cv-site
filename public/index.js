@@ -97,8 +97,6 @@ $("#contact-form").submit(() => {
   });
 
 
-$(document).ready(function(){
-    $("#paginate-btn-1").trigger('click'); 
-});
+
 
 

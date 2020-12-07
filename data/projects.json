@@ -1,6 +1,46 @@
 {
     "projects": [
         {
+            "name": "Sea Level Predictor",
+            "category": "Python Data Analysis",
+            "description": "Python, NumPy, Pandas Malplotlib, SciPy",
+            "project_link": "https://repl.it/@MichaelTandy/Sea-Level-Predictor",
+            "code_link": "",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/demographic-data-analyzer.JPG"
+        },
+        {
+            "name": "Time Series Viz",
+            "category": "Python Data Analysis",
+            "description": "Python, Pandas, Matplotlib, Seaborn",
+            "project_link": "https://repl.it/@MichaelTandy/Page-View-Time-Series-Visualizer",
+            "code_link": "",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/demographic-data-analyzer.JPG"
+        },
+        {
+            "name": "Medical Data Viz",
+            "category": "Python Data Analysis",
+            "description": "Python, NumPy, Pandas, Matplotlib, Seaborn",
+            "project_link": "https://repl.it/@MichaelTandy/Medical-Data-Visualizer",
+            "code_link": "https://github.com/mike1234-pixel/fcc-data-analysis-with-python-project-three",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/medical-data-visualizer-screenshot.JPG"
+        },
+        {
+            "name": "Demographic Data",
+            "category": "Python Data Analysis",
+            "description": "Python, Pandas",
+            "project_link": "https://repl.it/@MichaelTandy/Demographic-Data-Analyzer",
+            "code_link": "https://github.com/mike1234-pixel/fcc-data-analysis-with-python-project-two",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/demographic-data-analyzer.JPG"
+        },
+        {
+            "name": "μ-σ²-σ Calculator",
+            "category": "Python Data Analysis",
+            "description": "Python, NumPy",
+            "project_link": "https://repl.it/@MichaelTandy/Mean-Variance-Standard-Deviation-Calculator",
+            "code_link": "https://github.com/mike1234-pixel/fcc-data-analysis-with-python-project-one",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/mean-variance-standard-deviation-calculator-screenshot.jpg"
+        },
+        {
             "name": "Stock Checker",
             "category": "Information Security and Quality Assurance",
             "description": "Node.js, Express, jQuery",
@@ -113,7 +153,7 @@
             "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/timestamp-microservice-screenshot.jpg"
         },
         {
-            "name": "Metric-Imperial Converter",
+            "name": "Unit Converter",
             "category": "Microservices and APIs",
             "description": "Node.js, Express, jQuery, MDBootstrap, Mocha, Chai",
             "project_link": "https://metric-imperial-converter-1.herokuapp.com/",

@@ -17,7 +17,7 @@ body {
   text-align: left;
 }
 
-/* INDEX.HTML BANNER */
+/* index.html banner */
 
 #video-container {
   height: 35vh;
@@ -46,9 +46,24 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 412px) {
   #video-container {
     height: 45vh;
+  }
+  .home-title {
+    font-size: 15px;
+  }
+  .home-p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .home-title {
+    font-size: 20px;
+  }
+  .home-p {
+    font-size: 10px;
   }
 }
 
@@ -71,7 +86,7 @@ body {
   color: #33b5e5;
 }
 
-/* CARDS: GRID-CONTAINER */
+/* cards: grid-container */
 #projects {
   display: grid;
   width: 100%;
@@ -114,7 +129,7 @@ body {
   align-self: center;
 }
 
-/* CARDS */
+/* cards */
 
 .card {
   text-align: center;
@@ -168,6 +183,12 @@ body {
   width: 80px;
 }
 
+/* footer */
+
+.social-link:hover {
+  color: black;
+}
+
 /* CV PAGE */
 
 #cv-page-body,
@@ -190,6 +211,17 @@ body {
 
 #skills-list li {
   list-style-type: none;
+}
+
+.fab,
+.fas,
+.iconify-icon {
+  font-size: 20px;
+}
+
+#fcc-icon,
+#uni-icon {
+  font-size: 40px;
 }
 
 /*  CONTACT PAGE */
