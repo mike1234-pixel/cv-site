@@ -6,6 +6,10 @@ html {
 
 body {
   text-align: center;
+  background-image: url("./mountains.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .center {
