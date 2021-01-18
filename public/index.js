@@ -96,7 +96,3 @@ $("#contact-form").submit(() => {
     alert( "Thanks for your message. I will be in touch soon." );
   });
 
-
-
-
-

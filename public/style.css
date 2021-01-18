@@ -209,6 +209,13 @@ body {
   margin-top: 20px;
 }
 
+@media (min-width: 1000px) {
+  #cv-blurb {
+    /* background: rgba(43, 152, 192, 0.164); */
+    margin: 0 30vw;
+  }
+}
+
 .certificate-btn {
   width: 300px;
 }

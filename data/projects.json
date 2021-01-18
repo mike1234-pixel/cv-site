@@ -3,18 +3,18 @@
         {
             "name": "Sea Level Predictor",
             "category": "Python Data Analysis",
-            "description": "Python, NumPy, Pandas Malplotlib, SciPy",
+            "description": "Python, Pandas Malplotlib, SciPy",
             "project_link": "https://repl.it/@MichaelTandy/Sea-Level-Predictor",
-            "code_link": "",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/demographic-data-analyzer.JPG"
+            "code_link": "https://github.com/mike1234-pixel/fcc-data-analysis-with-python-project-five",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/sea-level-predictor-screenshot.JPG"
         },
         {
             "name": "Time Series Viz",
             "category": "Python Data Analysis",
             "description": "Python, Pandas, Matplotlib, Seaborn",
             "project_link": "https://repl.it/@MichaelTandy/Page-View-Time-Series-Visualizer",
-            "code_link": "",
-            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/demographic-data-analyzer.JPG"
+            "code_link": "https://github.com/mike1234-pixel/fcc-data-analysis-with-python-project-four",
+            "img_link": "https://cv-site-images.s3.eu-west-2.amazonaws.com/page-view-time-series-visualizer.JPG"
         },
         {
             "name": "Medical Data Viz",
